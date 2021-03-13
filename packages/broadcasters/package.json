@@ -21,6 +21,16 @@
     "sort": "scripty",
     "test": "scripty"
   },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "devDependencies": {
     "@types/jest": "26.0.20",
     "eslint-plugin-jest": "24.3.0",

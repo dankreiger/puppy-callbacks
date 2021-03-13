@@ -24,7 +24,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "packages/**/src/*.{js,ts,tsx,jsx,json,css}": [
+    "packages/**/src/*.{js,ts,json}": [
       "yarn sort && prettier --single-quote --write"
     ],
     "*.{md,mdx,yml}": [
