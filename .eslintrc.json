@@ -13,7 +13,6 @@
       "project": ["tsconfig.json"]
     }, 
     "plugins": ["@typescript-eslint", "jest"],
- 
     "rules": {
       "prefer-const": "error",
       "@typescript-eslint/no-unsafe-member-access": "off",

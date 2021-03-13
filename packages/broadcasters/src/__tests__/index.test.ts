@@ -1,8 +1,8 @@
-import { createTimeout } from '../index';
-
-jest.useFakeTimers();
+import { createTimeout } from '..';
 
 describe('createTimeout', () => {
+  jest.useFakeTimers();
+
   afterEach(() => {
     jest.clearAllMocks();
   });

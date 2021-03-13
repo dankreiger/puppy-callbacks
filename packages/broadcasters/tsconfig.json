@@ -4,7 +4,9 @@
     "composite": true,
     "esModuleInterop": true,
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "src",
+    "types": ["jest"],
+    "moduleResolution": "node"
   },
   "include": ["src"]
 }
