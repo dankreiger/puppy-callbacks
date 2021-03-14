@@ -13,7 +13,7 @@ export const DONE: unique symbol;
 // Warning: (ae-forgotten-export) The symbol "VoidCallback" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
-export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<T | typeof DONE>) => Unsubscribe_2;
+export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | T>) => Unsubscribe_2;
 
 // Warning: (ae-forgotten-export) The symbol "Unsubscribe" needs to be exported by the entry point index.d.ts
 //
@@ -21,7 +21,7 @@ export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroad
 export function iterateThrough<T = unknown>(iterable: Iterable<T>): (listener: VoidCallback<T | typeof DONE>) => Unsubscribe;
 
 // @public (undocumented)
-export const map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<U | typeof DONE>) => Unsubscribe_2;
+export const map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | U>) => Unsubscribe_2;
 
 // @public
 export function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadcaster): IBroadcaster;
