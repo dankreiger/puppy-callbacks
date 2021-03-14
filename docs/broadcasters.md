@@ -4,6 +4,12 @@
 
 ## broadcasters package
 
+broadcaster functions
+
+## Remarks
+
+A broadcaster is a function that accepts a listener
+
 ## Functions
 
 |  Function | Description |
@@ -11,5 +17,4 @@
 |  [addListener(selector)](./broadcasters.addlistener.md) | Adds event listener to a html element Returns a function that accepts an event, which returns a function that accepts a listener, which returns an unsubscribe function which removes the event listener |
 |  [createInterval(time)](./broadcasters.createinterval.md) | Creates an interval Returns a function that accepts a listener, which returns an unsubscribe function |
 |  [createTimeout(time)](./broadcasters.createtimeout.md) | Creates a timeout Returns a function that accepts a listener, which returns an unsubscribe function |
-|  [merge(broadcaster1, broadcaster2)](./broadcasters.merge.md) | Accepts two broadcaster functions for merging Returns a function that accepts a listener, and applies the listener to both broadcasters - this returns an unsubscribe function |
 

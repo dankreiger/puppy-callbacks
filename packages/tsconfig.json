@@ -1,5 +1,5 @@
 
 {
   "files": [],
-  "references": [{ "path": "broadcasters" }]
+  "references": [{ "path": "broadcasters"}, {"path": "operators"}, {"path": "symbols" }, {"path": "types"}]
 }

@@ -4,21 +4,16 @@
 
 ```ts
 
-// Warning: (ae-forgotten-export) The symbol "IBroadcaster" needs to be exported by the entry point index.d.ts
-//
-// @public
-export function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster;
+import type { IBroadcaster } from '@dankreiger/types';
 
 // @public
-export function createInterval(time: number): IBroadcaster;
+export function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster<unknown>;
 
 // @public
-export function createTimeout(time: number): IBroadcaster;
+export function createInterval(time: number): IBroadcaster<unknown>;
 
 // @public
-export function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadcaster): IBroadcaster;
+export function createTimeout(time: number): IBroadcaster<unknown>;
 
-
-// (No @packageDocumentation comment for this package)
 
 ```

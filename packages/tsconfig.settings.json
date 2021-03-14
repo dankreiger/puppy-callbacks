@@ -2,7 +2,6 @@
   "compilerOptions": {
     "module": "commonjs",
     "types": [],
-    "sourceMap": true,
     "target": "ES2015",
     "strict": true,
     "noUnusedLocals": true,

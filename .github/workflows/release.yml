@@ -35,7 +35,7 @@ jobs:
         run: yarn lint
 
       - name: Build and check docs
-        run: yarn api-docs
+        run: yarn docs
 
       # Publish to GitHub Packages
       - run: npm run prod-publish

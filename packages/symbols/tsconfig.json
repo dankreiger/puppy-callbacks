@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.settings.json",
+  "references": [],
+  "compilerOptions": {
+    "composite": true,
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "types": ["jest"],
+    "moduleResolution": "node"
+  },
+  "include": ["src"]
+}

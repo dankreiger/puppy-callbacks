@@ -8,5 +8,8 @@
 
 |  Package | Description |
 |  --- | --- |
-|  [@dankreiger/broadcasters](./broadcasters.md) |  |
+|  [@dankreiger/broadcasters](./broadcasters.md) | broadcaster functions |
+|  [@dankreiger/operators](./operators.md) | operators an operator is a function that accepts a broadcaster and listener, then modifies their behaviour |
+|  [@dankreiger/symbols](./symbols.md) | symbols |
+|  [@dankreiger/types](./types.md) | types/interfaces |
 

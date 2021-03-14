@@ -19,6 +19,7 @@
     "lint": "scripty",
     "boom": "scripty",
     "sort": "scripty",
+    "dev": "yarn tsc --watch --preserveWatchOutput",
     "test": "scripty"
   },
   "jest": {
@@ -30,6 +31,10 @@
         "statements": 100
       }
     }
+  },
+  "dependencies": {
+    "@dankreiger/symbols": "^0.0.4",
+    "@dankreiger/types": "^0.0.4"
   },
   "devDependencies": {
     "@types/jest": "26.0.20",

@@ -1,0 +1,52 @@
+{
+  "name": "@dankreiger/operators",
+  "version": "0.0.4",
+  "homepage": "https://github.com/dankreiger/puppy-callbacks",
+  "bugs": "https://github.com/dankreiger/puppy-callbacks/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dankreiger/puppy-callbacks.git",
+    "directory": "packages/operators"
+  },
+  "license": "MIT",
+  "author": "Dan Kreiger <dan@dankreiger.com>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "api-report": "scripty",
+    "build": "scripty",
+    "clean": "rimraf lib *.tsbuildinfo",
+    "lint": "scripty",
+    "boom": "scripty",
+    "sort": "scripty",
+    "dev": "yarn tsc --watch --preserveWatchOutput",
+    "test": "scripty"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 20,
+        "functions": 20,
+        "lines": 20,
+        "statements": 20
+      }
+    }
+  },
+  "dependencies": {
+    "@dankreiger/symbols": "^0.0.4",
+    "@dankreiger/types": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "eslint-plugin-jest": "24.3.1",
+    "jest": "26.6.3",
+    "scripty": "2.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
+  }
+}

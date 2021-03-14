@@ -9,7 +9,7 @@ Adds event listener to a html element Returns a function that accepts an event, 
 <b>Signature:</b>
 
 ```typescript
-export declare function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster;
+export declare function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster<unknown>;
 ```
 
 ## Parameters
@@ -20,7 +20,7 @@ export declare function addListener(selector: string): (eventType: keyof HTMLEle
 
 <b>Returns:</b>
 
-(eventType: keyof HTMLElementEventMap) =&gt; IBroadcaster
+(eventType: keyof HTMLElementEventMap) =&gt; [IBroadcaster](./types.ibroadcaster.md)<!-- -->&lt;unknown&gt;
 
 {<!-- -->(eventType: keyof HTMLElementEventMap) =<!-- -->&gt; (listener: VoidCallback) =<!-- -->&gt; Unsubscribe<!-- -->}
 

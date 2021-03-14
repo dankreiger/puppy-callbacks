@@ -9,7 +9,7 @@ Creates a timeout Returns a function that accepts a listener, which returns an u
 <b>Signature:</b>
 
 ```typescript
-export declare function createTimeout(time: number): IBroadcaster;
+export declare function createTimeout(time: number): IBroadcaster<unknown>;
 ```
 
 ## Parameters
@@ -20,7 +20,7 @@ export declare function createTimeout(time: number): IBroadcaster;
 
 <b>Returns:</b>
 
-IBroadcaster
+[IBroadcaster](./types.ibroadcaster.md)<!-- -->&lt;unknown&gt;
 
 {<!-- -->function(listener: VoidCallback): Unsubscribe<!-- -->} a function accepting a callback listener that returns and unsubscribe function
 

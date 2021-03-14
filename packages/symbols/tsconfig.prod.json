@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.settings.prod.json",
+  "references": [],
+  "compilerOptions": {
+    "composite": true,
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "moduleResolution": "node"
+  },
+  "include": ["src"]
+}

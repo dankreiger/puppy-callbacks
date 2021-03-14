@@ -4,10 +4,11 @@
   "private": true,
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples"
   ],
   "scripts": {
-    "api-docs": "scripty",
+    "docs": "scripty",
     "api-report": "scripty",
     "build": "scripty",
     "clean": "scripty",
@@ -19,9 +20,8 @@
     "sort": "scripty",
     "test": "scripty",
     "test-publish": "scripty",
-    "dev": "yarn build --watch --preserveWatchOutput",
-    "docs-manual": "yarn clean && yarn build && yarn api-extractor run --local && yarn api-documenter markdown -i temp -o docs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "examples": "yarn --cwd=examples dev "
   },
   "lint-staged": {
     "packages/**/src/*.{js,ts,json}": [
@@ -37,7 +37,6 @@
     "@babel/preset-typescript": "7.13.0",
     "@commitlint/cli": "12.0.1",
     "@commitlint/config-conventional": "12.0.1",
-    "@commitlint/config-lerna-scopes": "12.0.1",
     "@microsoft/api-documenter": "7.12.12",
     "@microsoft/api-extractor": "7.13.2",
     "@types/jest": "26.0.20",
