@@ -30,6 +30,9 @@
       "yarn sort && prettier --write"
     ]
   },
+  "dependencies": {
+    "@dankreiger/operators": "^1.0.1"
+  },
   "devDependencies": {
     "@babel/core": "7.13.10",
     "@babel/preset-env": "7.13.10",
