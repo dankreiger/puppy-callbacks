@@ -1,16 +1,17 @@
 {
   "name": "examples",
   "version": "1.0.1",
+  "private": true,
   "description": "",
   "license": "ISC",
   "author": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch",
-    "preinstall": "rm -rf node_modules",
     "clean": "rm -rf dist",
+    "dev": "yarn clean && concurrently \"yarn watch\" \"yarn start\"",
+    "preinstall": "rm -rf node_modules",
     "start": "webpack serve --open",
-    "dev": "yarn clean && concurrently \"yarn watch\" \"yarn start\""
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "@dankreiger/broadcasters": "^1.0.1",

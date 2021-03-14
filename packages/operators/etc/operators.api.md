@@ -4,17 +4,25 @@
 
 ```ts
 
+import { Unsubscribe as Unsubscribe_2 } from '@redux-saga/core';
+
 // @public (undocumented)
 export const DONE: unique symbol;
 
+// Warning: (ae-forgotten-export) The symbol "IBroadcaster" needs to be exported by the entry point index.d.ts
 // Warning: (ae-forgotten-export) The symbol "VoidCallback" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<T | typeof DONE>) => Unsubscribe_2;
+
 // Warning: (ae-forgotten-export) The symbol "Unsubscribe" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
 export function iterateThrough<T = unknown>(iterable: Iterable<T>): (listener: VoidCallback<T | typeof DONE>) => Unsubscribe;
 
-// Warning: (ae-forgotten-export) The symbol "IBroadcaster" needs to be exported by the entry point index.d.ts
-//
+// @public (undocumented)
+export const map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<U | typeof DONE>) => Unsubscribe_2;
+
 // @public
 export function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadcaster): IBroadcaster;
 

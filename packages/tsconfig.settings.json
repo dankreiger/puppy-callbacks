@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ESNext",
     "types": [],
     "target": "ES2015",
     "strict": true,
@@ -12,6 +12,7 @@
     "stripInternal": true,
     "outDir": "lib",
     "rootDir": "src",
+    "resolveJsonModule": true
   },
   "exclude": ["**/node_modules/**", "**/lib/**"]
 }

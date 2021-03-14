@@ -1,0 +1,12 @@
+{
+  "index.js": {
+    "bundled": 806,
+    "minified": 796,
+    "gzipped": 409
+  },
+  "index.min.js": {
+    "bundled": 782,
+    "minified": 772,
+    "gzipped": 407
+  }
+}

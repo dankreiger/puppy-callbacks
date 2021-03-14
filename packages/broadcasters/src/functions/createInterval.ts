@@ -8,7 +8,7 @@ import type { IBroadcaster } from '../types/interfaces';
  * @returns \{function(listener: VoidCallback): Unsubscribe\} a function accepting a callback listener that returns and unsubscribe function
  * @public
  */
-export function createInterval(time: number): IBroadcaster<unknown> {
+export function createInterval<T>(time: number): IBroadcaster<T> {
   return function broadcaster(listener) {
     const id = setInterval(listener, time);
     return function () {

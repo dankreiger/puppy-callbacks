@@ -10,7 +10,7 @@
 export function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster<unknown>;
 
 // @public
-export function createInterval(time: number): IBroadcaster<unknown>;
+export function createInterval<T>(time: number): IBroadcaster<T>;
 
 // @public
 export function createTimeout(time: number): IBroadcaster<unknown>;

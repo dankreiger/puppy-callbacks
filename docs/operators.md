@@ -23,4 +23,6 @@ an operator is a function that accepts a broadcaster and listener, then modifies
 |  Variable | Description |
 |  --- | --- |
 |  [DONE](./operators.done.md) |  |
+|  [filter](./operators.filter.md) |  |
+|  [map](./operators.map.md) |  |
 

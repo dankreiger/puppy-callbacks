@@ -9,7 +9,7 @@ Creates an interval Returns a function that accepts a listener, which returns an
 <b>Signature:</b>
 
 ```typescript
-export declare function createInterval(time: number): IBroadcaster<unknown>;
+export declare function createInterval<T>(time: number): IBroadcaster<T>;
 ```
 
 ## Parameters
@@ -20,7 +20,7 @@ export declare function createInterval(time: number): IBroadcaster<unknown>;
 
 <b>Returns:</b>
 
-IBroadcaster&lt;unknown&gt;
+IBroadcaster&lt;T&gt;
 
 {<!-- -->function(listener: VoidCallback): Unsubscribe<!-- -->} a function accepting a callback listener that returns and unsubscribe function
 
