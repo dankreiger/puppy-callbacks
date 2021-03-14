@@ -4,8 +4,6 @@
 
 ```ts
 
-// Warning: (ae-forgotten-export) The symbol "IBroadcaster" needs to be exported by the entry point index.d.ts
-//
 // @public
 export function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster<unknown>;
 
@@ -14,6 +12,18 @@ export function createInterval<T>(time: number): IBroadcaster<T>;
 
 // @public
 export function createTimeout(time: number): IBroadcaster<unknown>;
+
+// @public (undocumented)
+export interface IBroadcaster<T = unknown> {
+    // (undocumented)
+    (listener: VoidCallback<T>): Unsubscribe;
+}
+
+// @public (undocumented)
+export type Unsubscribe = () => void;
+
+// @public
+export type VoidCallback<T> = (...params: T[]) => void;
 
 
 ```

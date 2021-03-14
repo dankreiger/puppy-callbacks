@@ -1,7 +1,6 @@
-import { Unsubscribe } from '@redux-saga/core';
 import { DONE } from '../symbols/done';
 import { IBroadcaster } from '../types/interfaces';
-import { VoidCallback } from '../types/types';
+import { VoidCallback, Unsubscribe } from '../types/types';
 
 export const map = <T, U>(transform: (arg: T) => U) => (
   broadcaster: IBroadcaster<T | typeof DONE>

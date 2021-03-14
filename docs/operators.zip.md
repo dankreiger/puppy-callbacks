@@ -16,10 +16,10 @@ export declare function zip<T = unknown, U = unknown>(broadcaster1: IBroadcaster
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  broadcaster1 | IBroadcaster&lt;T&gt; |  |
-|  broadcaster2 | IBroadcaster&lt;U&gt; |  |
+|  broadcaster1 | [IBroadcaster](./operators.ibroadcaster.md)<!-- -->&lt;T&gt; |  |
+|  broadcaster2 | [IBroadcaster](./operators.ibroadcaster.md)<!-- -->&lt;U&gt; |  |
 
 <b>Returns:</b>
 
-IBroadcaster&lt;(T \| U \| typeof [DONE](./operators.done.md) \| undefined)\[\] \| undefined&gt;
+[IBroadcaster](./operators.ibroadcaster.md)<!-- -->&lt;(T \| U \| typeof [DONE](./operators.done.md) \| undefined)\[\] \| undefined&gt;
 

@@ -20,7 +20,7 @@ export declare function createInterval<T>(time: number): IBroadcaster<T>;
 
 <b>Returns:</b>
 
-IBroadcaster&lt;T&gt;
+[IBroadcaster](./broadcasters.ibroadcaster.md)<!-- -->&lt;T&gt;
 
 {<!-- -->function(listener: VoidCallback): Unsubscribe<!-- -->} a function accepting a callback listener that returns and unsubscribe function
 

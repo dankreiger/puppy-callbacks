@@ -1,7 +1,6 @@
-import { Unsubscribe } from '@redux-saga/core';
 import { DONE } from '../symbols/done';
 import { IBroadcaster } from '../types/interfaces';
-import { VoidCallback } from '../types/types';
+import { Unsubscribe, VoidCallback } from '../types/types';
 
 export const filter = <T>(predicate: (arg: T) => boolean) => (
   broadcaster: IBroadcaster<T | typeof DONE>

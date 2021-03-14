@@ -18,6 +18,12 @@ an operator is a function that accepts a broadcaster and listener, then modifies
 |  [merge(broadcaster1, broadcaster2)](./operators.merge.md) | Accepts two broadcaster functions for merging Returns a function that accepts a listener, and applies the listener to both broadcasters - this returns an unsubscribe function |
 |  [zip(broadcaster1, broadcaster2)](./operators.zip.md) | Accepts two broadcasters and values grouped in an array |
 
+## Interfaces
+
+|  Interface | Description |
+|  --- | --- |
+|  [IBroadcaster](./operators.ibroadcaster.md) |  |
+
 ## Variables
 
 |  Variable | Description |
@@ -25,4 +31,11 @@ an operator is a function that accepts a broadcaster and listener, then modifies
 |  [DONE](./operators.done.md) |  |
 |  [filter](./operators.filter.md) |  |
 |  [map](./operators.map.md) |  |
+
+## Type Aliases
+
+|  Type Alias | Description |
+|  --- | --- |
+|  [Unsubscribe](./operators.unsubscribe.md) |  |
+|  [VoidCallback](./operators.voidcallback.md) | types/interfaces |
 

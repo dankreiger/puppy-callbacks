@@ -4,27 +4,32 @@
 
 ```ts
 
-import { Unsubscribe as Unsubscribe_2 } from '@redux-saga/core';
-
 // @public (undocumented)
 export const DONE: unique symbol;
 
-// Warning: (ae-forgotten-export) The symbol "IBroadcaster" needs to be exported by the entry point index.d.ts
-// Warning: (ae-forgotten-export) The symbol "VoidCallback" needs to be exported by the entry point index.d.ts
-//
 // @public (undocumented)
-export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | T>) => Unsubscribe_2;
+export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | T>) => Unsubscribe;
 
-// Warning: (ae-forgotten-export) The symbol "Unsubscribe" needs to be exported by the entry point index.d.ts
-//
+// @public (undocumented)
+export interface IBroadcaster<T = unknown> {
+    // (undocumented)
+    (listener: VoidCallback<T>): Unsubscribe;
+}
+
 // @public (undocumented)
 export function iterateThrough<T = unknown>(iterable: Iterable<T>): (listener: VoidCallback<T | typeof DONE>) => Unsubscribe;
 
 // @public (undocumented)
-export const map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | U>) => Unsubscribe_2;
+export const map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | U>) => Unsubscribe;
 
 // @public
 export function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadcaster): IBroadcaster;
+
+// @public (undocumented)
+export type Unsubscribe = () => void;
+
+// @public
+export type VoidCallback<T> = (...params: T[]) => void;
 
 // @public
 export function zip<T = unknown, U = unknown>(broadcaster1: IBroadcaster<T>, broadcaster2: IBroadcaster<U>): IBroadcaster<(T | U | typeof DONE | undefined)[] | undefined>;

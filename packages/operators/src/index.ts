@@ -9,4 +9,7 @@ export { map } from './functions/map';
 export { merge } from './functions/merge';
 export { zip } from './functions/zip';
 
+export type { Unsubscribe, VoidCallback } from './types/types';
+export type { IBroadcaster } from './types/interfaces';
+
 export { DONE } from './symbols/done';

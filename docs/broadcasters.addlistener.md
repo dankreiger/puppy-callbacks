@@ -20,7 +20,7 @@ export declare function addListener(selector: string): (eventType: keyof HTMLEle
 
 <b>Returns:</b>
 
-(eventType: keyof HTMLElementEventMap) =&gt; IBroadcaster&lt;unknown&gt;
+(eventType: keyof HTMLElementEventMap) =&gt; [IBroadcaster](./broadcasters.ibroadcaster.md)<!-- -->&lt;unknown&gt;
 
 {<!-- -->(eventType: keyof HTMLElementEventMap) =<!-- -->&gt; (listener: VoidCallback) =<!-- -->&gt; Unsubscribe<!-- -->}
 

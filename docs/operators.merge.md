@@ -16,12 +16,12 @@ export declare function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadca
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  broadcaster1 | IBroadcaster | duration of timout in milliseconds |
-|  broadcaster2 | IBroadcaster | duration of timout in milliseconds |
+|  broadcaster1 | [IBroadcaster](./operators.ibroadcaster.md) | duration of timout in milliseconds |
+|  broadcaster2 | [IBroadcaster](./operators.ibroadcaster.md) | duration of timout in milliseconds |
 
 <b>Returns:</b>
 
-IBroadcaster
+[IBroadcaster](./operators.ibroadcaster.md)
 
 {<!-- -->function(listener: VoidCallback): Unsubscribe<!-- -->} a function accepting a callback listener that returns and unsubscribe function
 

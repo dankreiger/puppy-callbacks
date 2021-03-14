@@ -18,3 +18,16 @@ A broadcaster is a function that accepts a listener
 |  [createInterval(time)](./broadcasters.createinterval.md) | Creates an interval Returns a function that accepts a listener, which returns an unsubscribe function |
 |  [createTimeout(time)](./broadcasters.createtimeout.md) | Creates a timeout Returns a function that accepts a listener, which returns an unsubscribe function |
 
+## Interfaces
+
+|  Interface | Description |
+|  --- | --- |
+|  [IBroadcaster](./broadcasters.ibroadcaster.md) |  |
+
+## Type Aliases
+
+|  Type Alias | Description |
+|  --- | --- |
+|  [Unsubscribe](./broadcasters.unsubscribe.md) |  |
+|  [VoidCallback](./broadcasters.voidcallback.md) | types/interfaces |
+
