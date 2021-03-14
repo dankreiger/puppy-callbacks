@@ -9,5 +9,4 @@
 |  Package | Description |
 |  --- | --- |
 |  [@dankreiger/broadcasters](./broadcasters.md) | broadcaster functions |
-|  [@dankreiger/operators](./operators.md) | operator functions |
 
