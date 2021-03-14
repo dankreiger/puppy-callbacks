@@ -32,9 +32,6 @@
       }
     }
   },
-  "dependencies": {
-    "@dankreiger/symbols": "^0.0.4"
-  },
   "devDependencies": {
     "@types/jest": "26.0.20",
     "dtslint": "^4.0.7",
