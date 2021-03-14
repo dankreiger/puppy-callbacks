@@ -4,7 +4,11 @@
 
 ## operators package
 
-operators an operator is a function that accepts a broadcaster and listener, then modifies their behaviour
+operator functions
+
+## Remarks
+
+an operator is a function that accepts a broadcaster and listener, then modifies their behaviour
 
 ## Functions
 
@@ -19,5 +23,4 @@ operators an operator is a function that accepts a broadcaster and listener, the
 |  Variable | Description |
 |  --- | --- |
 |  [DONE](./operators.done.md) |  |
-|  [noop](./operators.noop.md) |  |
 

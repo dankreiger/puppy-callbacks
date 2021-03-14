@@ -20,7 +20,8 @@
     "test": "scripty",
     "test-publish": "scripty",
     "prepare": "husky install",
-    "examples": "yarn --cwd=examples dev "
+    "examples:install": "yarn --cwd=examples",
+    "examples:dev": "yarn --cwd=examples dev "
   },
   "lint-staged": {
     "packages/**/src/*.{js,ts,json}": [

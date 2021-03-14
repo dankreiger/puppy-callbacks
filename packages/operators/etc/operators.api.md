@@ -18,9 +18,6 @@ export function iterateThrough<T = unknown>(iterable: Iterable<T>): (listener: V
 // @public
 export function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadcaster): IBroadcaster;
 
-// @public (undocumented)
-export const noop: () => void;
-
 // @public
 export function zip<T = unknown, U = unknown>(broadcaster1: IBroadcaster<T>, broadcaster2: IBroadcaster<U>): IBroadcaster<(T | U | typeof DONE | undefined)[] | undefined>;
 

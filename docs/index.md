@@ -9,5 +9,5 @@
 |  Package | Description |
 |  --- | --- |
 |  [@dankreiger/broadcasters](./broadcasters.md) | broadcaster functions |
-|  [@dankreiger/operators](./operators.md) | operators an operator is a function that accepts a broadcaster and listener, then modifies their behaviour |
+|  [@dankreiger/operators](./operators.md) | operator functions |
 
