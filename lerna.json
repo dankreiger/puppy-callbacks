@@ -8,7 +8,7 @@
   "command": {
     "publish": {
       "access": "public",
-      "registry": "https://npm.pkg.github.com"
+      "registry": "http://localhost:4873"
     }
   }
 }
