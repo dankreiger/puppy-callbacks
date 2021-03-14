@@ -27,7 +27,6 @@
     "@dankreiger/types": "^1.0.1"
   },
   "devDependencies": {
-    "@dankreiger/broadcasters": "^1.0.1",
     "@types/jest": "26.0.20",
     "eslint-plugin-jest": "24.3.1",
     "jest": "26.6.3",

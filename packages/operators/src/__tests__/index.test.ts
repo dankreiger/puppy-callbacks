@@ -1,7 +1,20 @@
-import { createTimeout, createInterval } from '@dankreiger/broadcasters';
 import { merge } from '..';
 
 jest.useFakeTimers();
+
+const createInterval = (duration: number) => (listener: () => void) => {
+  const id = setInterval(listener, duration);
+  return () => {
+    clearInterval(id);
+  };
+};
+
+const createTimeout = (duration: number) => (listener: () => void) => {
+  const id = setTimeout(listener, duration);
+  return () => {
+    clearTimeout(id);
+  };
+};
 
 describe('operators', () => {
   describe('merge', () => {
