@@ -21,11 +21,9 @@ jobs:
           scope: '@dankreiger'
 
       - name: Install
-        # if: steps.restore-lerna.outputs.cache-hit != 'true'
         run: yarn
 
       - name: Lerna Bootstrap
-        # if: steps.restore-lerna.outputs.cache-hit != 'true'
         run: yarn lerna bootstrap
 
       - name: Test packages
