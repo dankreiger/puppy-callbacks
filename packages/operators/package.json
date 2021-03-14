@@ -20,7 +20,6 @@
     "lint": "scripty",
     "boom": "scripty",
     "sort": "scripty",
-    "dev": "yarn tsc --watch --preserveWatchOutput",
     "test": "scripty"
   },
   "devDependencies": {

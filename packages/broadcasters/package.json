@@ -17,10 +17,10 @@
     "api-report": "scripty",
     "build": "scripty",
     "clean": "rimraf lib *.tsbuildinfo",
+    "readme": "echo $(curl https://dankreiger.github.io/puppy-callbacks/broadcasters.html) > README.md",
     "lint": "scripty",
     "boom": "scripty",
     "sort": "scripty",
-    "dev": "yarn tsc --watch --preserveWatchOutput",
     "test": "scripty"
   },
   "jest": {

@@ -9,5 +9,6 @@
     "types": ["jest"],
     "moduleResolution": "node"
   },
-  "include": ["src"]
+  "include": ["src", "__tests__"],
+  "exclude": ["rollup.config.ts"]
 }
