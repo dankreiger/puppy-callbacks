@@ -27,7 +27,7 @@ jobs:
         run: yarn lerna bootstrap
 
       - name: Test packages
-        run: yarn lerna link && yarn test
+        run: yarn test
 
       - name: Lint packages
         run: yarn lint
