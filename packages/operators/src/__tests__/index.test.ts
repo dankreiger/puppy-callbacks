@@ -1,5 +1,5 @@
 import { createTimeout, createInterval } from '@dankreiger/broadcasters';
-import { merge } from '../functions/merge';
+import { merge } from '..';
 
 jest.useFakeTimers();
 
