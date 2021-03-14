@@ -1,6 +1,6 @@
 {
   "name": "@dankreiger/broadcasters",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "homepage": "https://github.com/dankreiger/puppy-callbacks",
   "bugs": "https://github.com/dankreiger/puppy-callbacks/issues",
   "repository": {
@@ -39,7 +39,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "http://localhost:4873"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripty": {
     "path": "../../scripts/packages"
