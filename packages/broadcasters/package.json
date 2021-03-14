@@ -1,6 +1,6 @@
 {
   "name": "@dankreiger/broadcasters",
-  "version": "0.0.4",
+  "version": "1.0.1",
   "homepage": "https://github.com/dankreiger/puppy-callbacks",
   "bugs": "https://github.com/dankreiger/puppy-callbacks/issues",
   "repository": {
@@ -33,8 +33,8 @@
     }
   },
   "dependencies": {
-    "@dankreiger/symbols": "^0.0.4",
-    "@dankreiger/types": "^0.0.4"
+    "@dankreiger/symbols": "^1.0.1",
+    "@dankreiger/types": "^1.0.1"
   },
   "devDependencies": {
     "@types/jest": "26.0.20",

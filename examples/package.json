@@ -1,6 +1,6 @@
 {
   "name": "examples",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "license": "ISC",
   "author": "",
@@ -13,9 +13,9 @@
     "dev": "yarn clean && concurrently \"yarn watch\" \"yarn start\""
   },
   "dependencies": {
-    "@dankreiger/broadcasters": "^0.0.4",
-    "@dankreiger/operators": "^0.0.4",
-    "@dankreiger/symbols": "^0.0.4"
+    "@dankreiger/broadcasters": "^1.0.1",
+    "@dankreiger/operators": "^1.0.1",
+    "@dankreiger/symbols": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.34",

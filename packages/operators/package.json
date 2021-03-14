@@ -1,6 +1,6 @@
 {
   "name": "@dankreiger/operators",
-  "version": "0.0.4",
+  "version": "1.0.1",
   "homepage": "https://github.com/dankreiger/puppy-callbacks",
   "bugs": "https://github.com/dankreiger/puppy-callbacks/issues",
   "repository": {
@@ -33,11 +33,11 @@
     }
   },
   "dependencies": {
-    "@dankreiger/symbols": "^0.0.4",
-    "@dankreiger/types": "^0.0.4"
+    "@dankreiger/symbols": "^1.0.1",
+    "@dankreiger/types": "^1.0.1"
   },
   "devDependencies": {
-    "@dankreiger/broadcasters": "^0.0.4",
+    "@dankreiger/broadcasters": "^1.0.1",
     "@types/jest": "26.0.20",
     "eslint-plugin-jest": "24.3.1",
     "jest": "26.6.3",
