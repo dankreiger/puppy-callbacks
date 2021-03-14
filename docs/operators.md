@@ -18,5 +18,6 @@ operators an operator is a function that accepts a broadcaster and listener, the
 
 |  Variable | Description |
 |  --- | --- |
+|  [DONE](./operators.done.md) |  |
 |  [noop](./operators.noop.md) |  |
 

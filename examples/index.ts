@@ -1,6 +1,5 @@
 import { addListener, createInterval } from '@dankreiger/broadcasters';
-import { zip, iterateThrough } from '@dankreiger/operators';
-import { DONE } from '@dankreiger/symbols';
+import { zip, iterateThrough, DONE } from '@dankreiger/operators';
 const clickAndTick = zip(addListener('#button')('click'), createInterval(1000));
 
 clickAndTick(console.log);

@@ -18,5 +18,5 @@ export declare function iterateThrough<T = unknown>(iterable: Iterable<T>): (lis
 
 <b>Returns:</b>
 
-(listener: [VoidCallback](./types.voidcallback.md)<!-- -->&lt;T \| typeof [DONE](./symbols.done.md)<!-- -->&gt;) =&gt; [Unsubscribe](./types.unsubscribe.md)
+(listener: VoidCallback&lt;T \| typeof [DONE](./operators.done.md)<!-- -->&gt;) =&gt; Unsubscribe
 

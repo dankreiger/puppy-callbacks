@@ -1,5 +1,5 @@
-import { DONE } from '@dankreiger/symbols';
-import type { Unsubscribe, VoidCallback } from '@dankreiger/types';
+import { VoidCallback, Unsubscribe } from '../types/types';
+import { DONE } from '../symbols/done';
 
 export function iterateThrough<T = unknown>(iterable: Iterable<T>) {
   return function (listener: VoidCallback<T | typeof DONE>): Unsubscribe {

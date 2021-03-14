@@ -6,6 +6,7 @@
 export { merge } from './functions/merge';
 export { iterateThrough } from './functions/iterateThrough';
 export { zip } from './functions/zip';
+export { DONE } from './symbols/done';
 
 // const modify = (broadcaster: IBr) => listener => {
 //   let string = ''

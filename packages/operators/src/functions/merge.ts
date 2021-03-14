@@ -1,4 +1,4 @@
-import { IBroadcaster } from '@dankreiger/types';
+import { IBroadcaster } from '../types/interfaces';
 
 /**
  * Accepts two broadcaster functions for merging

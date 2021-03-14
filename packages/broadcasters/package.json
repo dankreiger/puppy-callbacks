@@ -32,10 +32,6 @@
       }
     }
   },
-  "dependencies": {
-    "@dankreiger/symbols": "^1.0.1",
-    "@dankreiger/types": "^1.0.1"
-  },
   "devDependencies": {
     "@types/jest": "26.0.20",
     "eslint-plugin-jest": "24.3.1",

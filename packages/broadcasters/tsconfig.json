@@ -1,6 +1,6 @@
 {
   "extends": "../tsconfig.settings.json",
-  "references": [{ "path": "../types" }, { "path": "../symbols" }],
+  "references": [],
   "compilerOptions": {
     "composite": true,
     "esModuleInterop": true,

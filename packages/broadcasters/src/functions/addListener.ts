@@ -1,4 +1,4 @@
-import type { IBroadcaster } from '@dankreiger/types';
+import type { IBroadcaster } from '../types/interfaces';
 
 /**
  * Adds event listener to a html element

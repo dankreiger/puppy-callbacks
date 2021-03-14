@@ -20,7 +20,7 @@ export declare function createTimeout(time: number): IBroadcaster<unknown>;
 
 <b>Returns:</b>
 
-[IBroadcaster](./types.ibroadcaster.md)<!-- -->&lt;unknown&gt;
+IBroadcaster&lt;unknown&gt;
 
 {<!-- -->function(listener: VoidCallback): Unsubscribe<!-- -->} a function accepting a callback listener that returns and unsubscribe function
 

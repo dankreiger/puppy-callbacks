@@ -1,5 +1,6 @@
-import { DONE } from '@dankreiger/symbols';
-import { IBroadcaster, Unsubscribe } from '@dankreiger/types';
+import type { Unsubscribe } from '../types/types';
+import type { IBroadcaster } from '../types/interfaces';
+import { DONE } from '../symbols/done';
 
 /**
  * Accepts two broadcasters and values grouped in an array

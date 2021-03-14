@@ -4,8 +4,8 @@
 
 ```ts
 
-import type { IBroadcaster } from '@dankreiger/types';
-
+// Warning: (ae-forgotten-export) The symbol "IBroadcaster" needs to be exported by the entry point index.d.ts
+//
 // @public
 export function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster<unknown>;
 

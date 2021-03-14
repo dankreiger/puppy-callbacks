@@ -4,14 +4,17 @@
 
 ```ts
 
-import { DONE } from '@dankreiger/symbols';
-import { IBroadcaster } from '@dankreiger/types';
-import type { Unsubscribe } from '@dankreiger/types';
-import type { VoidCallback } from '@dankreiger/types';
+// @public (undocumented)
+export const DONE: unique symbol;
 
+// Warning: (ae-forgotten-export) The symbol "VoidCallback" needs to be exported by the entry point index.d.ts
+// Warning: (ae-forgotten-export) The symbol "Unsubscribe" needs to be exported by the entry point index.d.ts
+//
 // @public (undocumented)
 export function iterateThrough<T = unknown>(iterable: Iterable<T>): (listener: VoidCallback<T | typeof DONE>) => Unsubscribe;
 
+// Warning: (ae-forgotten-export) The symbol "IBroadcaster" needs to be exported by the entry point index.d.ts
+//
 // @public
 export function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadcaster): IBroadcaster;
 
