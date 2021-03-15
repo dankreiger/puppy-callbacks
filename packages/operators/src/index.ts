@@ -3,13 +3,15 @@
  * @remarks an operator is a function that accepts a broadcaster and listener, then modifies their behaviour
  *
  */
-export { iterateThrough } from './functions/iterateThrough';
-export { filter } from './functions/filter';
-export { map } from './functions/map';
-export { merge } from './functions/merge';
-export { zip } from './functions/zip';
+import { iterateThrough } from './functions/iterateThrough';
+import { filter } from './functions/filter';
+import { map } from './functions/map';
+import { merge } from './functions/merge';
+import { zip } from './functions/zip';
 
 export type { Unsubscribe, VoidCallback } from './types/types';
 export type { IBroadcaster } from './types/interfaces';
 
-export { DONE } from './symbols/done';
+import { DONE } from './symbols/done';
+
+export { iterateThrough, filter, map, merge, zip, DONE };

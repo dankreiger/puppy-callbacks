@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | T>) => Unsubscribe
+filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<T | typeof DONE>) => Unsubscribe
 ```

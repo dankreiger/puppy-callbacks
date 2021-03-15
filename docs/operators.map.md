@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | U>) => Unsubscribe
+map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<U | typeof DONE>) => Unsubscribe
 ```

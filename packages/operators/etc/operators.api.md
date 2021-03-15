@@ -8,7 +8,7 @@
 export const DONE: unique symbol;
 
 // @public (undocumented)
-export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | T>) => Unsubscribe;
+export const filter: <T>(predicate: (arg: T) => boolean) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<T | typeof DONE>) => Unsubscribe;
 
 // @public (undocumented)
 export interface IBroadcaster<T = unknown> {
@@ -20,7 +20,7 @@ export interface IBroadcaster<T = unknown> {
 export function iterateThrough<T = unknown>(iterable: Iterable<T>): (listener: VoidCallback<T | typeof DONE>) => Unsubscribe;
 
 // @public (undocumented)
-export const map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<typeof DONE | T>) => (listener: VoidCallback<typeof DONE | U>) => Unsubscribe;
+export const map: <T, U>(transform: (arg: T) => U) => (broadcaster: IBroadcaster<T | typeof DONE>) => (listener: VoidCallback<U | typeof DONE>) => Unsubscribe;
 
 // @public
 export function merge(broadcaster1: IBroadcaster, broadcaster2: IBroadcaster): IBroadcaster;

@@ -1,4 +1,8 @@
 
 #!/usr/bin/env bash
 echo "┏━━━ 💣 BOOM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-yarn clean && rimraf node_modules
+rimraf temp
+rimraf docs
+yarn clean 
+rimraf node_modules
+

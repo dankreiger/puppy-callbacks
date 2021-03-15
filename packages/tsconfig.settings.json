@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ESNext",
     "types": [],
-    "target": "ES2015",
+    "target": "ESNext",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
