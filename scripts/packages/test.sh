@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-echo "┏━━━ 🎯 TEST: $(pwd) ━━━━━━━━━━━━━━━━━━━"
+echo 
+echo "┏━━━ 🎯 TEST: $(echo "${PWD##*/}") ━━━━━━━━━━━━━━━━━━━"
+echo
 yarn jest --coverage

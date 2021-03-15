@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-echo "┏━━━ 🕵️‍♀️ LINT: eslint src --ext ts,js ━━━━━━━"
+echo
+echo "┏━━━ 🕵️‍♀️ LINT: $(echo "${PWD##*/}") ━━━━━━━"
+echo
 yarn eslint src --ext ts,js

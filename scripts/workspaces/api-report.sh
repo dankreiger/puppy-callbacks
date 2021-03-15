@@ -1,4 +1,8 @@
-  
 #!/usr/bin/env bash
-echo "┏━━━ 🧩 API REPORT: $(pwd) ━━━━━━━━━━━━━━━━━━━━━"
-yarn build && yarn lerna run api-report
+echo
+echo "┏━━━ 🧩 API REPORT: workspaces ━━━━━━━━━━━━━━━━━━━━━"
+echo
+yarn clean
+yarn build
+
+yarn lerna run api-report

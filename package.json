@@ -7,21 +7,21 @@
     "packages/*"
   ],
   "scripts": {
-    "docs": "scripty",
     "api-report": "scripty",
+    "boom": "scripty",
     "build": "scripty",
     "clean": "scripty",
-    "postinstall": "scripty",
+    "docs": "scripty",
+    "examples:install": "yarn --cwd=examples",
+    "examples:dev": "yarn --cwd=examples dev ",
     "lint": "scripty",
-    "boom": "scripty",
+    "postinstall": "scripty",
+    "prepare": "husky install",
     "prod-publish": "scripty",
     "proxy-registry": "scripty",
     "sort": "scripty",
     "test": "scripty",
-    "test-publish": "scripty",
-    "prepare": "husky install",
-    "examples:install": "yarn --cwd=examples",
-    "examples:dev": "yarn --cwd=examples dev "
+    "test-publish": "scripty"
   },
   "lint-staged": {
     "packages/**/src/*.{js,ts,json}": [

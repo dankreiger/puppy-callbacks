@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
+echo 
+echo "┏━━━ 📖 DOCS: workspaces ━━━━━━━━━━━━━━"
+echo
 echo "┏━━━ 📚 DOCS: Extracting API surface ━━━━━━━━━━━━━━"
-yarn clean
-yarn build
-yarn lerna run api-report
+echo
+yarn api-report
+echo
 echo "┏━━━ 📝 DOCS: Generating Markdown Docs ━━━━━━━━━━━━"
+echo
 GH_PAGES_CFG_EXISTS=$(test -f docs/_config.yml)
 if [ $GH_PAGES_CFG_EXISTS ]
 then

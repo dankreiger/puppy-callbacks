@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "┏━━━ 🏗️ POSTINSTALL ━━━━━━━"
+echo "┏━━━ 🏗️  POSTINSTALL: workspaces ━━━━━━━"
 is-ci || husky install
 is-ci || yarn lerna bootstrap
 is-ci || yarn build

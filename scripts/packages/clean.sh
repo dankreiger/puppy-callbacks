@@ -1,12 +1,14 @@
-  
 #!/usr/bin/env bash
-echo "┏━━━ 🧹 CLEAN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo
+echo "┏━━━ 🧹 CLEAN: $(echo "${PWD##*/}") ━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo
+
 rimraf lib
 rimraf es
 rimraf dist
 rimraf types
 rimraf lib *.tsbuildinfo
-rimraf coverage
 rimraf temp
-rimraf *.loh
-rimraf node_modules
+rimraf coverage
+
+rimraf *.log

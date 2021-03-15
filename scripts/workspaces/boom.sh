@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-echo "┏━━━ 💣 BOOM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-lerna run --scope @dankreiger/* --parallel boom
+echo "┏━━━ 💣 BOOM: workspaces ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+yarn lerna run --concurrency 2 boom
 rm -rf node_modules

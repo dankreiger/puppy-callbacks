@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-echo "┏━━━ 📶 SORT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-yarn sort-package-json && 
-lerna run --scope @dankreiger/* --parallel sort
+echo "┏━━━ 📶 SORT: workspaces ━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+yarn sort-package-json
+yarn lerna run sort --concurrency 2

@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-echo "┏━━━ 🧩 API REPORT: $(pwd) ━━━━━━━━━━━━━━━━━━━━━"
+echo
+echo "┏━━━ 🧩 API REPORT: $(echo "${PWD##*/}") ━━━━━━━━━━━━━━━━━━━━━"
+echo
 yarn api-extractor run --local

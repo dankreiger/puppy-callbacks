@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-echo "┏━━━ 📦 Building Workspace ━━━━━━━━━━━━━━━━━━━"
+echo
+echo "┏━━━ 📦 BUILD: workspaces ━━━━━━━━━━━━━━━━━━━"
+echo
 yarn lerna run build --concurrency 2

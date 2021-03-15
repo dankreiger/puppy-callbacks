@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-echo "┏━━━ 📶 SORT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo
+echo "┏━━━ 📶 SORT: $(echo "${PWD##*/}") ━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo
 yarn sort-package-json
