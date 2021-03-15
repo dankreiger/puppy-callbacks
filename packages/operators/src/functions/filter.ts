@@ -1,6 +1,6 @@
 import { DONE } from '../symbols/done';
-import { IBroadcaster } from '../types/interfaces';
-import { Unsubscribe, VoidCallback } from '../types/types';
+import { IBroadcaster } from '../ts/interfaces';
+import { Unsubscribe, VoidCallback } from '../ts/types';
 
 export const filter = <T>(predicate: (arg: T) => boolean) => (
   broadcaster: IBroadcaster<T | typeof DONE>

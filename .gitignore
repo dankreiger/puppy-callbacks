@@ -118,3 +118,6 @@ dist
 
 temp
 lib
+es
+dist
+types

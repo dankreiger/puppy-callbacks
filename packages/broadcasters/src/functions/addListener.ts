@@ -1,4 +1,4 @@
-import type { IBroadcaster } from '../types/interfaces';
+import type { IBroadcaster } from '../ts/interfaces';
 
 /**
  * Adds event listener to a html element

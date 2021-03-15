@@ -1,2 +1,6 @@
 node_modules
-packages/*/lib
+packages/**/lib
+packages/**/dist
+packages/**/es
+packages/**/types
+packages/**/rollup.config.ts

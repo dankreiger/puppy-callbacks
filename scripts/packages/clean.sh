@@ -1,8 +1,12 @@
   
 #!/usr/bin/env bash
 echo "┏━━━ 🧹 CLEAN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-yarn lerna run clean --concurrency 2
-
-rm *.log
+rimraf lib
+rimraf es
+rimraf dist
+rimraf types
+rimraf lib *.tsbuildinfo
+rimraf coverage
 rimraf temp
-rimraf docs
+rimraf *.loh
+rimraf node_modules

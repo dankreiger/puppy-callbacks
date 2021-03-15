@@ -1,5 +1,5 @@
-import type { Unsubscribe } from '../types/types';
-import type { IBroadcaster } from '../types/interfaces';
+import type { Unsubscribe } from '../ts/types';
+import type { IBroadcaster } from '../ts/interfaces';
 import { DONE } from '../symbols/done';
 
 /**

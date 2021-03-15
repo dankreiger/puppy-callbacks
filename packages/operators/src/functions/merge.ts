@@ -1,4 +1,4 @@
-import { IBroadcaster } from '../types/interfaces';
+import { IBroadcaster } from '../ts/interfaces';
 
 /**
  * Accepts two broadcaster functions for merging

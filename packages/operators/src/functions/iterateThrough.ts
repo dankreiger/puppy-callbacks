@@ -1,4 +1,4 @@
-import { VoidCallback, Unsubscribe } from '../types/types';
+import { VoidCallback, Unsubscribe } from '../ts/types';
 import { DONE } from '../symbols/done';
 import { PROGRESS } from '../symbols/progress';
 

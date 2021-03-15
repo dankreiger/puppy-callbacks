@@ -4,6 +4,7 @@
   "compilerOptions": {
     "composite": true,
     "esModuleInterop": true,
+    "declarationDir": "./types",
     "outDir": "lib",
     "rootDir": "src",
     "moduleResolution": "node"

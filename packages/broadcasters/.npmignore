@@ -1,5 +1,7 @@
 
 /*
-!/lib/*
 
-api-extractor.json
+!/lib/*
+!/es/*
+!/dist/*
+!/types/*
