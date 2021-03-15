@@ -10,24 +10,17 @@ broadcaster functions
 
 A broadcaster is a function that accepts a listener
 
+## Classes
+
+|  Class | Description |
+|  --- | --- |
+|  [PuppyBroadcaster](./broadcasters.puppybroadcaster.md) | The class returned by custom broadcasters |
+
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
-|  [addListener(selector)](./broadcasters.addlistener.md) | Adds event listener to a html element Returns a function that accepts an event, which returns a function that accepts a listener, which returns an unsubscribe function which removes the event listener |
-|  [createInterval(time)](./broadcasters.createinterval.md) | Creates an interval Returns a function that accepts a listener, which returns an unsubscribe function |
+|  [addListener(selector, eventType)](./broadcasters.addlistener.md) | Adds event listener to a html element |
+|  [createInterval(time)](./broadcasters.createinterval.md) | Creates an interval |
 |  [createTimeout(time)](./broadcasters.createtimeout.md) | Creates a timeout Returns a function that accepts a listener, which returns an unsubscribe function |
-
-## Interfaces
-
-|  Interface | Description |
-|  --- | --- |
-|  [IBroadcaster](./broadcasters.ibroadcaster.md) |  |
-
-## Type Aliases
-
-|  Type Alias | Description |
-|  --- | --- |
-|  [Unsubscribe](./broadcasters.unsubscribe.md) |  |
-|  [VoidCallback](./broadcasters.voidcallback.md) | types/interfaces |
 

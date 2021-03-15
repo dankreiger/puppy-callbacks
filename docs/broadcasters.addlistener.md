@@ -4,12 +4,12 @@
 
 ## addListener() function
 
-Adds event listener to a html element Returns a function that accepts an event, which returns a function that accepts a listener, which returns an unsubscribe function which removes the event listener
+Adds event listener to a html element
 
 <b>Signature:</b>
 
 ```typescript
-export declare function addListener(selector: string): (eventType: keyof HTMLElementEventMap) => IBroadcaster<unknown>;
+export declare function addListener(selector: string, eventType: keyof HTMLElementEventMap): PuppyBroadcaster;
 ```
 
 ## Parameters
@@ -17,10 +17,9 @@ export declare function addListener(selector: string): (eventType: keyof HTMLEle
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  selector | string | string for querying a dom element (e.g. class, id) |
+|  eventType | keyof HTMLElementEventMap |  |
 
 <b>Returns:</b>
 
-(eventType: keyof HTMLElementEventMap) =&gt; [IBroadcaster](./broadcasters.ibroadcaster.md)<!-- -->&lt;unknown&gt;
-
-{<!-- -->(eventType: keyof HTMLElementEventMap) =<!-- -->&gt; (listener: VoidCallback) =<!-- -->&gt; Unsubscribe<!-- -->}
+[PuppyBroadcaster](./broadcasters.puppybroadcaster.md)
 

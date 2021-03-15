@@ -4,12 +4,12 @@
 
 ## createInterval() function
 
-Creates an interval Returns a function that accepts a listener, which returns an unsubscribe function
+Creates an interval
 
 <b>Signature:</b>
 
 ```typescript
-export declare function createInterval<T>(time: number): IBroadcaster<T>;
+export declare function createInterval(time: number): PuppyBroadcaster;
 ```
 
 ## Parameters
@@ -20,7 +20,5 @@ export declare function createInterval<T>(time: number): IBroadcaster<T>;
 
 <b>Returns:</b>
 
-[IBroadcaster](./broadcasters.ibroadcaster.md)<!-- -->&lt;T&gt;
-
-{<!-- -->function(listener: VoidCallback): Unsubscribe<!-- -->} a function accepting a callback listener that returns and unsubscribe function
+[PuppyBroadcaster](./broadcasters.puppybroadcaster.md)
 

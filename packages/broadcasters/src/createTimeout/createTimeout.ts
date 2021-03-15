@@ -1,4 +1,4 @@
-import type { IBroadcaster } from '../ts/interfaces';
+import { PuppyBroadcaster } from '../shared/PuppyBroadcaster/PuppyBroadcaster';
 
 /**
  * Creates a timeout
@@ -8,11 +8,12 @@ import type { IBroadcaster } from '../ts/interfaces';
  * @returns \{function(listener: VoidCallback): Unsubscribe\} a function accepting a callback listener that returns and unsubscribe function
  * @public
  */
-export function createTimeout(time: number): IBroadcaster<unknown> {
-  return function broadcaster(listener) {
+export function createTimeout(time: number): PuppyBroadcaster {
+  return new PuppyBroadcaster((listener) => {
     const id = setTimeout(listener, time);
-    return function () {
+    return () => {
       clearTimeout(id);
+      return undefined;
     };
-  };
+  });
 }
