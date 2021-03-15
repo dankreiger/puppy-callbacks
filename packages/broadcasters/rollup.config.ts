@@ -109,7 +109,7 @@ export default [
     output: {
       file: pkg.unpkg,
       format: 'umd',
-      name: 'Operators',
+      name: 'Broadcasters',
       indent: false,
     },
     plugins: [
@@ -136,7 +136,7 @@ export default [
     output: {
       file: pkg.unpkgmin,
       format: 'umd',
-      name: 'Operators',
+      name: 'Broadcasters',
       indent: false,
     },
     plugins: [
