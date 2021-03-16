@@ -12,8 +12,6 @@
     "build": "scripty",
     "clean": "scripty",
     "docs": "scripty",
-    "examples:install": "yarn --cwd=examples",
-    "examples:dev": "yarn --cwd=examples dev ",
     "lint": "scripty",
     "postinstall": "scripty",
     "prepare": "husky install",
