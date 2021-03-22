@@ -30,7 +30,7 @@ jobs:
         run: yarn test
 
       - name: Test types
-        run: yarn test-types        
+        run: yarn build && yarn test-types
 
       - name: Lint packages
         run: yarn lint
