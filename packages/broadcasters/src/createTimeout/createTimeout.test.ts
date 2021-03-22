@@ -1,6 +1,4 @@
 import { createTimeout } from './createTimeout';
-import { PuppyBroadcaster } from '../shared/PuppyBroadcaster/PuppyBroadcaster';
-const { SUBSCRIBED, UNSUBSCRIBED } = PuppyBroadcaster.StatusOptions;
 
 jest.useFakeTimers();
 
@@ -17,16 +15,14 @@ describe('createTimeout', () => {
     expect(listener).not.toBeCalled();
     expect(setTimeout).not.toBeCalled();
 
-    oneSecondTimeout.subscribe(listener);
-    expect(oneSecondTimeout.status).toBe(SUBSCRIBED);
+    oneSecondTimeout(listener);
     jest.advanceTimersByTime(1000);
 
     expect(listener).toBeCalled();
     expect(listener).toHaveBeenCalledTimes(1);
 
     expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(setTimeout).toHaveBeenCalledWith(listener, 1000);
-    expect(oneSecondTimeout.status).toBe(SUBSCRIBED);
+    expect(setTimeout).toHaveBeenCalledWith(expect.any(Function), 1000);
   });
 
   test('can cancel a timeout by calling the unsubcribe function', () => {
@@ -38,14 +34,12 @@ describe('createTimeout', () => {
     expect(setTimeout).not.toBeCalled();
     expect(clearTimeout).not.toBeCalled();
 
-    oneSecondTimeout.subscribe(listener);
-    expect(oneSecondTimeout.status).toBe(SUBSCRIBED);
+    const unsubscribe = oneSecondTimeout(listener);
 
     // unsubscribe after 500ms
     jest.advanceTimersByTime(500);
 
-    oneSecondTimeout.unsubscribe();
-    expect(oneSecondTimeout.status).toBe(UNSUBSCRIBED);
+    unsubscribe();
     expect(setTimeout).toHaveBeenCalledTimes(1);
     expect(clearTimeout).toHaveBeenCalledTimes(1);
 
@@ -63,20 +57,18 @@ describe('createTimeout', () => {
     expect(setTimeout).not.toBeCalled();
     expect(clearTimeout).not.toBeCalled();
 
-    oneSecondTimeout.subscribe(listener);
-    expect(oneSecondTimeout.status).toBe(SUBSCRIBED);
+    const unsubscribe = oneSecondTimeout(listener);
 
     // unsubscribe after 1000ms
     jest.advanceTimersByTime(1000);
-    oneSecondTimeout.unsubscribe();
-    expect(oneSecondTimeout.status).toBe(UNSUBSCRIBED);
+    unsubscribe();
 
     // listener was still called
     expect(listener).toBeCalled();
     expect(listener).toHaveBeenCalledTimes(1);
 
     expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(setTimeout).toHaveBeenCalledWith(listener, 1000);
+    expect(setTimeout).toHaveBeenCalledWith(expect.any(Function), 1000);
     // noop clearTimeout was also called
     expect(clearTimeout).toHaveBeenCalledTimes(1);
   });

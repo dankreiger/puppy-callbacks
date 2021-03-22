@@ -3,3 +3,4 @@ echo
 echo "┏━━━ 🎯 TEST: $(echo "${PWD##*/}") ━━━━━━━━━━━━━━━━━━━"
 echo
 yarn jest --coverage
+

@@ -10,11 +10,11 @@ broadcaster functions
 
 A broadcaster is a function that accepts a listener
 
-## Classes
+## Enumerations
 
-|  Class | Description |
+|  Enumeration | Description |
 |  --- | --- |
-|  [PuppyBroadcaster](./broadcasters.puppybroadcaster.md) | The class returned by custom broadcasters |
+|  [ETimerFn](./broadcasters.etimerfn.md) | Names of common native timer functions |
 
 ## Functions
 
@@ -22,5 +22,11 @@ A broadcaster is a function that accepts a listener
 |  --- | --- |
 |  [addListener(selector, eventType)](./broadcasters.addlistener.md) | Adds event listener to a html element |
 |  [createInterval(time)](./broadcasters.createinterval.md) | Creates an interval |
-|  [createTimeout(time)](./broadcasters.createtimeout.md) | Creates a timeout Returns a function that accepts a listener, which returns an unsubscribe function |
+|  [createTimeout(time)](./broadcasters.createtimeout.md) | Creates a timeout |
+
+## Type Aliases
+
+|  Type Alias | Description |
+|  --- | --- |
+|  [Broadcaster](./broadcasters.broadcaster.md) |  |
 

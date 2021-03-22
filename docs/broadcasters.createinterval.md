@@ -9,16 +9,16 @@ Creates an interval
 <b>Signature:</b>
 
 ```typescript
-export declare function createInterval(time: number): PuppyBroadcaster;
+export declare function createInterval<ListenerArgs = unknown, ListenerReturn = void>(time: number): Broadcaster<(args?: ListenerArgs[]) => ListenerReturn>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  time | number | duration of timout in milliseconds |
+|  time | number | duration of timeout in milliseconds |
 
 <b>Returns:</b>
 
-[PuppyBroadcaster](./broadcasters.puppybroadcaster.md)
+[Broadcaster](./broadcasters.broadcaster.md)<!-- -->&lt;(args?: ListenerArgs\[\]) =&gt; ListenerReturn&gt;
 

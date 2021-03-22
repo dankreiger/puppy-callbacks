@@ -1,19 +1,23 @@
-import { PuppyBroadcaster } from '../shared/PuppyBroadcaster/PuppyBroadcaster';
+import { ETimerFn } from '../ts/enums/ETimerFn/ETimerFn';
+import { Broadcaster } from '../ts/types/Broadcaster/Broadcaster';
+import { safeTimerFn } from '../utils/timer';
 
 /**
  * Creates a timeout
- * Returns a function that accepts a listener, which returns an unsubscribe function
  *
- * @param time - duration of timout in milliseconds
- * @returns \{function(listener: VoidCallback): Unsubscribe\} a function accepting a callback listener that returns and unsubscribe function
+ * @param time - duration of timeout in milliseconds
+ *
  * @public
  */
-export function createTimeout(time: number): PuppyBroadcaster {
-  return new PuppyBroadcaster((listener) => {
-    const id = setTimeout(listener, time);
+export function createTimeout<ListenerArgs = unknown, ListenerReturn = void>(
+  time: number
+): Broadcaster<(args?: ListenerArgs[]) => ListenerReturn> {
+  return function broadcaster(listener) {
+    const id = safeTimerFn(ETimerFn.SET_TIMEOUT, listener, time);
+
     return () => {
       clearTimeout(id);
       return undefined;
     };
-  });
+  };
 }

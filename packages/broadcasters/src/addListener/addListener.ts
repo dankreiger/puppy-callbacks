@@ -1,4 +1,5 @@
-import { PuppyBroadcaster } from '../shared/PuppyBroadcaster/PuppyBroadcaster';
+import type { Broadcaster } from '../ts/types/Broadcaster/Broadcaster';
+
 /**
  * Adds event listener to a html element
  *
@@ -6,17 +7,17 @@ import { PuppyBroadcaster } from '../shared/PuppyBroadcaster/PuppyBroadcaster';
  *
  * @public
  */
+
 export function addListener(
   selector: string,
   eventType: keyof HTMLElementEventMap
-): PuppyBroadcaster {
-  const element = document.querySelector(selector);
-
-  return new PuppyBroadcaster((listener) => {
+): Broadcaster<EventListenerOrEventListenerObject> {
+  return function broadcaster(listener) {
+    const element = document.querySelector(selector);
     element?.addEventListener(eventType, listener);
-    return () => {
+
+    return function unsubscribe() {
       element?.removeEventListener(eventType, listener);
-      return undefined;
     };
-  });
+  };
 }

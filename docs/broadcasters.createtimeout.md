@@ -4,23 +4,21 @@
 
 ## createTimeout() function
 
-Creates a timeout Returns a function that accepts a listener, which returns an unsubscribe function
+Creates a timeout
 
 <b>Signature:</b>
 
 ```typescript
-export declare function createTimeout(time: number): PuppyBroadcaster;
+export declare function createTimeout<ListenerArgs = unknown, ListenerReturn = void>(time: number): Broadcaster<(args?: ListenerArgs[]) => ListenerReturn>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  time | number | duration of timout in milliseconds |
+|  time | number | duration of timeout in milliseconds |
 
 <b>Returns:</b>
 
-[PuppyBroadcaster](./broadcasters.puppybroadcaster.md)
-
-{<!-- -->function(listener: VoidCallback): Unsubscribe<!-- -->} a function accepting a callback listener that returns and unsubscribe function
+[Broadcaster](./broadcasters.broadcaster.md)<!-- -->&lt;(args?: ListenerArgs\[\]) =&gt; ListenerReturn&gt;
 

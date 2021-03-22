@@ -13,12 +13,12 @@
   "main": "lib/index.js",
   "unpkg": "dist/index.js",
   "module": "es/index.js",
-  "types": "types/index.d.ts",
+  "types": "declarations/index.d.ts",
   "files": [
     "dist",
     "lib",
     "es",
-    "types"
+    "declarations"
   ],
   "scripts": {
     "api-report": "scripty",
@@ -27,7 +27,13 @@
     "lint": "scripty",
     "boom": "scripty",
     "sort": "scripty",
-    "test": "scripty"
+    "test": "scripty",
+    "test-types": "scripty"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/src/ts"
+    ]
   },
   "devDependencies": {
     "@babel/runtime": "7.13.10"

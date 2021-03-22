@@ -5,28 +5,24 @@
 ```ts
 
 // @public
-export function addListener(selector: string, eventType: keyof HTMLElementEventMap): PuppyBroadcaster;
+export function addListener(selector: string, eventType: keyof HTMLElementEventMap): Broadcaster<EventListenerOrEventListenerObject>;
+
+// @public (undocumented)
+export type Broadcaster<TListener, TBroadcasterReturn = () => void> = (listener: TListener) => TBroadcasterReturn;
 
 // @public
-export function createInterval(time: number): PuppyBroadcaster;
+export function createInterval<ListenerArgs = unknown, ListenerReturn = void>(time: number): Broadcaster<(args?: ListenerArgs[]) => ListenerReturn>;
 
 // @public
-export function createTimeout(time: number): PuppyBroadcaster;
+export function createTimeout<ListenerArgs = unknown, ListenerReturn = void>(time: number): Broadcaster<(args?: ListenerArgs[]) => ListenerReturn>;
 
 // @public
-export class PuppyBroadcaster {
-    constructor(_on: (listener: VoidFunction) => undefined | (() => undefined));
+export enum ETimerFn {
     // (undocumented)
-    static readonly noop: () => undefined;
-    set status(s: EStatus);
-    get status(): EStatus;
-    // Warning: (ae-forgotten-export) The symbol "EStatus" needs to be exported by the entry point index.d.ts
-    //
+    SET_INTERVAL = "setInterval",
     // (undocumented)
-    static readonly StatusOptions: typeof EStatus;
-    subscribe(listener: VoidFunction): void;
-    unsubscribe(): void;
-    }
+    SET_TIMEOUT = "setTimeout"
+}
 
 
 ```

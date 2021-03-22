@@ -9,7 +9,7 @@ Adds event listener to a html element
 <b>Signature:</b>
 
 ```typescript
-export declare function addListener(selector: string, eventType: keyof HTMLElementEventMap): PuppyBroadcaster;
+export declare function addListener(selector: string, eventType: keyof HTMLElementEventMap): Broadcaster<EventListenerOrEventListenerObject>;
 ```
 
 ## Parameters
@@ -21,5 +21,5 @@ export declare function addListener(selector: string, eventType: keyof HTMLEleme
 
 <b>Returns:</b>
 
-[PuppyBroadcaster](./broadcasters.puppybroadcaster.md)
+[Broadcaster](./broadcasters.broadcaster.md)<!-- -->&lt;EventListenerOrEventListenerObject&gt;
 

@@ -6,7 +6,8 @@ echo
 rimraf lib
 rimraf es
 rimraf dist
-rimraf types
+rimraf declarations
+rimraf node_modules
 rimraf lib *.tsbuildinfo
 rimraf temp
 rimraf coverage

@@ -120,4 +120,8 @@ temp
 lib
 es
 dist
-types
+declarations
+
+!**/ts/tests/types-*/declarations
+examples/build
+examples/public
