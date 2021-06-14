@@ -44,8 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/runtime": "7.13.10"
+    "@babel/core": "7.14.6",
+    "@babel/runtime": "7.14.6"
   },
   "publishConfig": {
     "access": "public",
