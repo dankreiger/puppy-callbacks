@@ -1,1 +1,1 @@
-export const PROGRESS = Symbol('progres');
+export const PROGRESS = Symbol('progress');
